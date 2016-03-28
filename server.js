@@ -1,12 +1,11 @@
-var express 		= require('express');
+var express 	= require('express');
 var app         = express();
-var Client = require('node-rest-client').Client;
+var Client      = require('node-rest-client').Client;
 
-var client = new Client();
+var client      = new Client();
 
-// configuuración ===================================================
-
-var port = process.env.PORT || 8081; // puerto
+// puerto
+var port = process.env.PORT || 8081; 
 
 var args = {
 	headers: {"Content-Type": "application/json", 
@@ -30,7 +29,7 @@ client.post("http://localhost:8080/api/v1/usuarios", args, function (data, respo
 	//console.log(response);
 });
 
-// inicar el servidor ================================================
+// iniciar el servidor ================================================
 app.listen(port);
 console.log('La magia esta en http://localhost:' + port);
 
