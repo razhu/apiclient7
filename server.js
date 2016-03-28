@@ -9,8 +9,9 @@ var client = new Client();
 var port = process.env.PORT || 8081; // puerto
 
 var args = {
-	headers: { "x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE0NTkyMDA3MDUsImV4cCI6MTQ1OTI4NzEwNX0.Zebmm0e_pS6a_idk6i8B-VUw5LqyP9c4is_ZcWkpb1E" },
-    data: { usuario: "agetic", contrasena:"agetic" }
+	headers: {"Content-Type": "application/json", 
+        "x-access-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiYWRtaW4iLCJpYXQiOjE0NTkyMDA3MDUsImV4cCI6MTQ1OTI4NzEwNX0.Zebmm0e_pS6a_idk6i8B-VUw5LqyP9c4is_ZcWkpb1E" },
+    data: { "usuario": "agetic", "contrasena":"agetic" }
 };
 
 // GET
