@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "node-rest-client": "^1.8.0"
+    "node-rest-client": "^1.8.0",
+    "sequelize": "^3.20.0"
   }
 }
