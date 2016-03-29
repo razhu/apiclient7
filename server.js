@@ -15,17 +15,13 @@ var args = {
 
 // GET
 client.get("http://localhost:8080/api/v1/usuarios", args, function (data, response) {
-    // parsed response body as js object
     console.log(data);
-    // raw response
     //console.log(response);
 });
 
 //POST
 client.post("http://localhost:8080/api/v1/usuarios", args, function (data, response) {
-	// parsed response body as js object 
 	console.log(data);
-	// raw response 
 	//console.log(response);
 });
 
